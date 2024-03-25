@@ -1,0 +1,8 @@
+export EDITOR="nvim"
+export TERMINAL="st"
+export MOZ_ENABLE_WAYLAND=0
+
+# MPD daemon start (if no other user instance exists)
+[ ! -s ~/.config/mpd/pid ] && mpd --no-config
+
+[[ -z $(pgrep -xU $UID mpdscribble) ]] && mpdscribble &
