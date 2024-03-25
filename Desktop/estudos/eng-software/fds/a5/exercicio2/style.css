@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.imagem {
+  background: url(https://ri.nadeko.net/zIMEHOI.jpeg) no-repeat;
+  display: block;
+  height: 750px;
+  width: 805px;
+}
+
+.imagem:hover {
+  transition: 1s;
+  filter: blur(2px);
+}
+
+.imagem:active {
+  height: 165px;
+  width: 403;
+}

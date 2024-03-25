@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <form action="./index.html">
+
+        <label for="email">Email</label>
+        <input style="display: block" id="email" type="email" name="qualquercoisa" placeholder="Coloque um email válido"
+            disabled>
+
+        <label for="password">Senha</label>
+        <input style="display: block" id="password" type="password">
+
+        <label for="text">Texto</label>
+        <input style="display: block" id="text" type="text">
+
+        <label for="CheckBox">CheckBox</label>
+        <input style="display: block" id="checkbox" type="checkbox">
+
+        <label for="radio">Masculino</label>
+        <input style="display: block" id="radio" type="radio" name="sexo" value="masculino">
+        <!-- radios precisam ter o mesmo atributo name -->
+
+        <label for="radio">Feminino</label>
+        <input style="display: block" id="radio" type="radio" name="sexo" value="feminino">
+
+        <label for="radio">Outro</label>
+        <input style="display: block" id="radio" type="radio" name="sexo" value="outro">
+
+        <label for="range">Range</label>
+        <input style="display: block" id="range" type="range" disabled>
+
+        <label for="Number">Número</label>
+        <input style="display: block" id="number" type="text" name="number">
+
+        <label for="file">Arquivo</label>
+        <input style="display: block" id="file" type="file" name="file">
+
+        <label for="date">Data</label>
+        <input style="display: block" id="date" type="date" name="date">
+
+        <select style="display: block" name="dia da semana">
+            <option value="domingo">Domingo</option>
+            <option value="segunda">Segunda</option>
+            <option value="terca">Terça</option>
+            <option value="quarta">Quarta</option>
+            <option value="quinta">Quinta</option>
+            <option value="sexta">Sexta</option>
+            <option value="sabado">Sábado</option>
+        </select>
+
+        <textarea style="display: block" id="textarea" name="textare" placeholder="Digite algo aqui"
+            rows="10"></textarea>
+
+        <button>Enviar</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  height: 200vh;
+  width: 200vh;
+}
+
+.minhadiv {
+  width: 500px;
+  height: 500px;
+  background-image: url(./batman.jpg);
+  background-position: 50% 50%;
+}

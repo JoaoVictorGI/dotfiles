@@ -1,0 +1,63 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  background: 0;
+  color: #fff;
+  font-size: 27px;
+  font-weight: bold;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 20px;
+  padding: 5px 0 5px 20px;
+  margin-bottom: 5px;
+  background-color: #f2ecd8;
+  color: #0d0000;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  border-radius: 5px;
+  outline: #400c0c;
+  border-color: #400c0c;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  background-color: #d21617;
+  color: #fff;
+  padding: 8px 10px; /* padding em cima e em baixo */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-top: 1px;
+}

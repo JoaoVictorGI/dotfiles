@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  height: 200vh;
+  width: 200vh;
+}
+
+.minhadiv {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(204, 0, 255, 0.85);
+}

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.pai {
+    width: 50%;
+    height: 500px;
+    background-color: red;
+}
+
+.filho {
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
