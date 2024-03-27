@@ -138,7 +138,7 @@ UXTerm*VT100*translations:    #override \n\
 !   Shift Ctrl <Key>M: maximize() \n\
 !   Shift Ctrl <Key>R: restore()
 
-#include ".xresources-themes/latte.Xresources"
+#include ".xresources-themes/onedark.Xresources"
 
 ! For regular sized screens (not 4k)
 ! apt install fonts-terminus xfonts-terminus xfonts-terminus-oblique fonts-inconsolata
