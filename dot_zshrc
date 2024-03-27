@@ -21,6 +21,7 @@ alias ls="eza --icons"
 alias lg="lazygit"
 alias mpv="devour mpv"
 alias nsxiv="devour nsxiv"
+alias zathura="devour zathura"
 alias update="doas apk update && doas apk upgrade && flatpak update"
 export PATH=$HOME/.local/bin:$HOME/go/bin:$HOME/.cargo/bin:$PATH
 export EDITOR=nvim

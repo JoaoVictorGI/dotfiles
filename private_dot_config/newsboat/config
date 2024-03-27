@@ -1,6 +1,6 @@
 auto-reload yes
 reload-threads 100
 max-downloads 3
-browser "librewolf %u"
+browser "xdg-open"
 download-path "/home/darknoul/Downloads/podcasts/%h/%n/%t"
 player "devour mpv"
