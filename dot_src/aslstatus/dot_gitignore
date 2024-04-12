@@ -1,7 +1,0 @@
-aslstatus
-components/.*.c
-*.swp
-*.o
-
-smart-config/smart-config
-smart-config/components.c

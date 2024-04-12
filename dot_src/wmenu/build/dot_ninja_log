@@ -1,0 +1,21 @@
+# ninja log v5
+3	89	1712692242218186065	protocols/wlr-layer-shell-unstable-v1-protocol.c	a56bff02672b42f4
+3	89	1712692242218186065	protocols/wlr-layer-shell-unstable-v1-client-protocol.h	95e5ed1d00e728d4
+2	101	1712692242230186221	protocols/xdg-activation-v1-protocol.c	df4eb4cb6f6d2ea4
+2	102	1712692242230186221	protocols/xdg-activation-v1-client-protocol.h	791296d2309c40d1
+1	107	1712692242236186299	protocols/xdg-shell-protocol.c	b2bd3b1ba2790059
+2	109	1712692242238186325	protocols/xdg-shell-client-protocol.h	79fbf7016c3c3a9c
+109	184	1712692242313187301	protocols/libclient_protos.a.p/meson-generated_.._xdg-shell-protocol.c.o	88088ca4bb016b
+110	188	1712692242317187354	protocols/libclient_protos.a.p/meson-generated_.._xdg-activation-v1-protocol.c.o	b0f3fdd5fc8822e8
+110	199	1712692242329187510	protocols/libclient_protos.a.p/meson-generated_.._wlr-layer-shell-unstable-v1-protocol.c.o	66ef00fbe1e69880
+199	213	1712692242342187679	protocols/libclient_protos.a	45cc4071cb17de81
+118	1241	1712692243365200992	wmenu.p/pango.c.o	e772dfeabea791ed
+184	1334	1712692243462202255	wmenu.p/pool-buffer.c.o	b2742a44c9faa854
+188	1354	1712692243483202528	wmenu.p/render.c.o	91d18da19f55b126
+111	1365	1712692243494202671	wmenu.p/main.c.o	7deb557e0d77444d
+113	1397	1712692243526203088	wmenu.p/menu.c.o	f2a7dab50d203dc7
+1398	1492	1712692243619204298	wmenu	7140038b307b0d44
+4	421	0	meson-internal__install	9bd7faa9472bf40f
+270	4436	1712857064862970395	wmenu.p/menu.c.o	f2a7dab50d203dc7
+4436	4949	1712857065374976968	wmenu	7140038b307b0d44
+4	868	0	meson-internal__install	9bd7faa9472bf40f

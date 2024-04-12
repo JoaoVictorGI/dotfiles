@@ -1,0 +1,1 @@
+{"targets": {"/home/joao/.src/wmenu/build/wmenu": {"destination": "{bindir}/wmenu", "tag": "runtime", "subproject": null}}, "data": {"/home/joao/.src/wmenu/wmenu_run": {"destination": "{bindir}/wmenu_run", "tag": "runtime", "subproject": null}}}

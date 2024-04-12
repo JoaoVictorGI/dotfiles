@@ -1,0 +1,50 @@
+[
+  {
+    "directory": "/home/joao/.src/wmenu/build",
+    "command": "cc -Iprotocols/libclient_protos.a.p -Iprotocols -I../protocols -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=c11 -O0 -g '-DVERSION=\"0.1.7\"' -Wno-missing-field-initializers -Wno-unused-parameter -Wundef -Wvla -fPIC -MD -MQ protocols/libclient_protos.a.p/meson-generated_.._xdg-shell-protocol.c.o -MF protocols/libclient_protos.a.p/meson-generated_.._xdg-shell-protocol.c.o.d -o protocols/libclient_protos.a.p/meson-generated_.._xdg-shell-protocol.c.o -c protocols/xdg-shell-protocol.c",
+    "file": "protocols/xdg-shell-protocol.c",
+    "output": "protocols/libclient_protos.a.p/meson-generated_.._xdg-shell-protocol.c.o"
+  },
+  {
+    "directory": "/home/joao/.src/wmenu/build",
+    "command": "cc -Iprotocols/libclient_protos.a.p -Iprotocols -I../protocols -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=c11 -O0 -g '-DVERSION=\"0.1.7\"' -Wno-missing-field-initializers -Wno-unused-parameter -Wundef -Wvla -fPIC -MD -MQ protocols/libclient_protos.a.p/meson-generated_.._xdg-activation-v1-protocol.c.o -MF protocols/libclient_protos.a.p/meson-generated_.._xdg-activation-v1-protocol.c.o.d -o protocols/libclient_protos.a.p/meson-generated_.._xdg-activation-v1-protocol.c.o -c protocols/xdg-activation-v1-protocol.c",
+    "file": "protocols/xdg-activation-v1-protocol.c",
+    "output": "protocols/libclient_protos.a.p/meson-generated_.._xdg-activation-v1-protocol.c.o"
+  },
+  {
+    "directory": "/home/joao/.src/wmenu/build",
+    "command": "cc -Iprotocols/libclient_protos.a.p -Iprotocols -I../protocols -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=c11 -O0 -g '-DVERSION=\"0.1.7\"' -Wno-missing-field-initializers -Wno-unused-parameter -Wundef -Wvla -fPIC -MD -MQ protocols/libclient_protos.a.p/meson-generated_.._wlr-layer-shell-unstable-v1-protocol.c.o -MF protocols/libclient_protos.a.p/meson-generated_.._wlr-layer-shell-unstable-v1-protocol.c.o.d -o protocols/libclient_protos.a.p/meson-generated_.._wlr-layer-shell-unstable-v1-protocol.c.o -c protocols/wlr-layer-shell-unstable-v1-protocol.c",
+    "file": "protocols/wlr-layer-shell-unstable-v1-protocol.c",
+    "output": "protocols/libclient_protos.a.p/meson-generated_.._wlr-layer-shell-unstable-v1-protocol.c.o"
+  },
+  {
+    "directory": "/home/joao/.src/wmenu/build",
+    "command": "cc -Iwmenu.p -I. -I.. -Iprotocols -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/pango-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=c11 -O0 -g '-DVERSION=\"0.1.7\"' -Wno-missing-field-initializers -Wno-unused-parameter -Wundef -Wvla -pthread -MD -MQ wmenu.p/main.c.o -MF wmenu.p/main.c.o.d -o wmenu.p/main.c.o -c ../main.c",
+    "file": "../main.c",
+    "output": "wmenu.p/main.c.o"
+  },
+  {
+    "directory": "/home/joao/.src/wmenu/build",
+    "command": "cc -Iwmenu.p -I. -I.. -Iprotocols -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/pango-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=c11 -O0 -g '-DVERSION=\"0.1.7\"' -Wno-missing-field-initializers -Wno-unused-parameter -Wundef -Wvla -pthread -MD -MQ wmenu.p/menu.c.o -MF wmenu.p/menu.c.o.d -o wmenu.p/menu.c.o -c ../menu.c",
+    "file": "../menu.c",
+    "output": "wmenu.p/menu.c.o"
+  },
+  {
+    "directory": "/home/joao/.src/wmenu/build",
+    "command": "cc -Iwmenu.p -I. -I.. -Iprotocols -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/pango-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=c11 -O0 -g '-DVERSION=\"0.1.7\"' -Wno-missing-field-initializers -Wno-unused-parameter -Wundef -Wvla -pthread -MD -MQ wmenu.p/pango.c.o -MF wmenu.p/pango.c.o.d -o wmenu.p/pango.c.o -c ../pango.c",
+    "file": "../pango.c",
+    "output": "wmenu.p/pango.c.o"
+  },
+  {
+    "directory": "/home/joao/.src/wmenu/build",
+    "command": "cc -Iwmenu.p -I. -I.. -Iprotocols -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/pango-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=c11 -O0 -g '-DVERSION=\"0.1.7\"' -Wno-missing-field-initializers -Wno-unused-parameter -Wundef -Wvla -pthread -MD -MQ wmenu.p/pool-buffer.c.o -MF wmenu.p/pool-buffer.c.o.d -o wmenu.p/pool-buffer.c.o -c ../pool-buffer.c",
+    "file": "../pool-buffer.c",
+    "output": "wmenu.p/pool-buffer.c.o"
+  },
+  {
+    "directory": "/home/joao/.src/wmenu/build",
+    "command": "cc -Iwmenu.p -I. -I.. -Iprotocols -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/pango-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=c11 -O0 -g '-DVERSION=\"0.1.7\"' -Wno-missing-field-initializers -Wno-unused-parameter -Wundef -Wvla -pthread -MD -MQ wmenu.p/render.c.o -MF wmenu.p/render.c.o.d -o wmenu.p/render.c.o -c ../render.c",
+    "file": "../render.c",
+    "output": "wmenu.p/render.c.o"
+  }
+]

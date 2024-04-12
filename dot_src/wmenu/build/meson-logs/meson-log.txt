@@ -1,0 +1,449 @@
+Build started at 2024-04-09T16:50:05.434383
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 1.3.2
+Source dir: /home/joao/.src/wmenu
+Build dir: /home/joao/.src/wmenu/build
+Build type: native build
+Project name: wmenu
+Project version: 0.1.7
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: cc -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld (GNU Binutils) 2.41
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 13.2.0
+/usr/bin/ld -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQJxMi5.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/crtn.o
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/joao/.src/wmenu/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 13.2.0 "cc (GCC) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.41
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils) 2.41
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: cc -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld (GNU Binutils) 2.41
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 13.2.0
+/usr/bin/ld -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVIOeQf.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/crtn.o
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/joao/.src/wmenu/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 13.2.0 "cc (GCC) 13.2.0")
+C linker for the build machine: cc ld.bfd 2.41
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils) 2.41
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Running compile:
+Working directory:  /home/joao/.src/wmenu/build/meson-private/tmpttjcknhd
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/joao/.src/wmenu/build/meson-private/tmpttjcknhd/testfile.c -o /home/joao/.src/wmenu/build/meson-private/tmpttjcknhd/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 '-DVERSION="0.1.7"'` -> 0
+Compiler for C supports arguments -DVERSION="0.1.7": YES 
+Running compile:
+Working directory:  /home/joao/.src/wmenu/build/meson-private/tmpi1wmou86
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/joao/.src/wmenu/build/meson-private/tmpi1wmou86/testfile.c -o /home/joao/.src/wmenu/build/meson-private/tmpi1wmou86/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-field-initializers -Wno-missing-field-initializers` -> 0
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Running compile:
+Working directory:  /home/joao/.src/wmenu/build/meson-private/tmpktbd32y3
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/joao/.src/wmenu/build/meson-private/tmpktbd32y3/testfile.c -o /home/joao/.src/wmenu/build/meson-private/tmpktbd32y3/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-parameter -Wno-unused-parameter` -> 0
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Running compile:
+Working directory:  /home/joao/.src/wmenu/build/meson-private/tmpu_7k6gbg
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/joao/.src/wmenu/build/meson-private/tmpu_7k6gbg/testfile.c -o /home/joao/.src/wmenu/build/meson-private/tmpu_7k6gbg/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wundef` -> 0
+Compiler for C supports arguments -Wundef: YES 
+Running compile:
+Working directory:  /home/joao/.src/wmenu/build/meson-private/tmpjupv26ss
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/joao/.src/wmenu/build/meson-private/tmpjupv26ss/testfile.c -o /home/joao/.src/wmenu/build/meson-private/tmpjupv26ss/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wvla` -> 0
+Compiler for C supports arguments -Wvla: YES 
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Determining dependency 'cairo' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion cairo` -> 0
+stdout:
+1.18.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags cairo` -> 0
+stdout:
+-I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs cairo` -> 0
+stdout:
+-L/usr/lib64 -lcairo
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs cairo` -> 0
+stdout:
+-lcairo
+-----------
+Running compile:
+Working directory:  /home/joao/.src/wmenu/build/meson-private/tmpgvxtl_j3
+Code:
+ 
+        #include<stddef.h>
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+-----------
+Command line: `cc /home/joao/.src/wmenu/build/meson-private/tmpgvxtl_j3/testfile.c -o /home/joao/.src/wmenu/build/meson-private/tmpgvxtl_j3/output.exe -D_FILE_OFFSET_BITS=64 -O0` -> 0
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/joao/.src/wmenu/build/meson-private/tmpa68n5s_m
+Code:
+ 
+-----------
+Command line: `cc /home/joao/.src/wmenu/build/meson-private/tmpa68n5s_m/testfile.c -o /home/joao/.src/wmenu/build/meson-private/tmpa68n5s_m/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/
+programs: =/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/bin/x86_64-unknown-linux-gnu/13.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/bin/
+libraries: =/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/lib/x86_64-unknown-linux-gnu/13.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../x86_64-unknown-linux-gnu/13.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-unknown-linux-gnu/13.2.0/:/lib/../lib64/:/usr/lib/x86_64-unknown-linux-gnu/13.2.0/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+-----------
+Run-time dependency cairo found: YES 1.18.0
+Determining dependency 'pango' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion pango` -> 0
+stdout:
+1.52.2
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags pango` -> 0
+stdout:
+-pthread -I/usr/include/pango-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs pango` -> 0
+stdout:
+-L/usr/lib64 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs pango` -> 0
+stdout:
+-lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz
+-----------
+Run-time dependency pango found: YES 1.52.2
+Determining dependency 'pangocairo' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion pangocairo` -> 0
+stdout:
+1.52.2
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags pangocairo` -> 0
+stdout:
+-pthread -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs pangocairo` -> 0
+stdout:
+-L/usr/lib64 -lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz -lcairo
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs pangocairo` -> 0
+stdout:
+-lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz -lcairo
+-----------
+Run-time dependency pangocairo found: YES 1.52.2
+Determining dependency 'wayland-client' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion wayland-client` -> 0
+stdout:
+1.22.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags wayland-client` -> 0
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs wayland-client` -> 0
+stdout:
+-L/usr/lib64 -lwayland-client
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs wayland-client` -> 0
+stdout:
+-lwayland-client
+-----------
+Run-time dependency wayland-client found: YES 1.22.0
+Determining dependency 'wayland-protocols' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion wayland-protocols` -> 0
+stdout:
+1.34
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags wayland-protocols` -> 0
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs wayland-protocols` -> 0
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs wayland-protocols` -> 0
+Run-time dependency wayland-protocols found: YES 1.34
+Determining dependency 'xkbcommon' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion xkbcommon` -> 0
+stdout:
+1.7.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags xkbcommon` -> 0
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs xkbcommon` -> 0
+stdout:
+-L/usr/lib64 -lxkbcommon
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs xkbcommon` -> 0
+stdout:
+-lxkbcommon
+-----------
+Run-time dependency xkbcommon found: YES 1.7.0
+Running compile:
+Working directory:  /home/joao/.src/wmenu/build/meson-private/tmp3cs8taia
+Code:
+ int main(void) { return 0; }
+
+-----------
+Command line: `cc /home/joao/.src/wmenu/build/meson-private/tmp3cs8taia/testfile.c -o /home/joao/.src/wmenu/build/meson-private/tmp3cs8taia/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrt -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
+Library rt found: YES
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=pkgdatadir wayland-protocols` -> 0
+stdout:
+//usr/share/wayland-protocols
+-----------
+Got pkg-config variable pkgdatadir : //usr/share/wayland-protocols
+Determining dependency 'wayland-scanner' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion wayland-scanner` -> 0
+stdout:
+1.22.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags wayland-scanner` -> 0
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs wayland-scanner` -> 0
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs wayland-scanner` -> 0
+Build-time dependency wayland-scanner found: YES 1.22.0
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=wayland_scanner wayland-scanner` -> 0
+stdout:
+/usr/bin/wayland-scanner
+-----------
+Got pkg-config variable wayland_scanner : /usr/bin/wayland-scanner
+Program /usr/bin/wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Determining dependency 'scdoc' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion scdoc` -> 1
+stderr:
+Package scdoc was not found in the pkg-config search path.
+Perhaps you should add the directory containing `scdoc.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'scdoc' found
+-----------
+CMake binary for build machine is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Found CMake: /usr/bin/cmake (3.27.6)
+Extracting basic cmake information
+CMake Toolchain: Calling CMake once to generate the compiler state
+Calling CMake (['/usr/bin/cmake']) in /home/joao/.src/wmenu/build/meson-private/__CMake_compiler_info__ with:
+  - "--trace-expand"
+  - "--trace-format=json-v1"
+  - "--no-warn-unused-cli"
+  - "--trace-redirect=cmake_trace.txt"
+  - "-G"
+  - "Ninja"
+  - "-DCMAKE_TOOLCHAIN_FILE=/home/joao/.src/wmenu/build/meson-private/__CMake_compiler_info__/CMakeMesonTempToolchainFile.cmake"
+  - "."
+CMake trace warning: add_executable() non imported executables are not supported
+CMake TRACE: /home/joao/.src/wmenu/build/meson-private/__CMake_compiler_info__/CMakeFiles/CMakeScratch/TryCompile-QRtyma/CMakeLists.txt:20 add_executable(['cmTC_5a8e3', '/usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c'])
+CMake trace warning: target_link_options() TARGET cmTC_5a8e3 not found
+CMake TRACE: /home/joao/.src/wmenu/build/meson-private/__CMake_compiler_info__/CMakeFiles/CMakeScratch/TryCompile-QRtyma/CMakeLists.txt:23 target_link_libraries(['cmTC_5a8e3', ''])
+Try CMake generator: auto
+Calling CMake (['/usr/bin/cmake']) in /home/joao/.src/wmenu/build/meson-private/cmake_scdoc with:
+  - "--trace-expand"
+  - "--trace-format=json-v1"
+  - "--no-warn-unused-cli"
+  - "--trace-redirect=cmake_trace.txt"
+  - "-DCMAKE_TOOLCHAIN_FILE=/home/joao/.src/wmenu/build/meson-private/cmake_scdoc/CMakeMesonToolchainFile.cmake"
+  - "."
+  -- Module search paths:    ['/', '/opt', '/usr', '/usr/local']
+  -- CMake root:             /usr/share/cmake-3.27
+  -- CMake architectures:    []
+  -- CMake lib search paths: ['lib', 'lib32', 'lib64', 'libx32', 'share', '']
+Preliminary CMake check failed. Aborting.
+Build-time dependency scdoc found: NO (tried pkgconfig and cmake)
+Build targets in project: 8
+
+Found ninja-1.11.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.

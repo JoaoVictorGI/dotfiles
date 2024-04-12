@@ -1,0 +1,2 @@
+/home/joao/.src/wmenu/build/meson-private/cmake_scdoc/CMakeFiles/edit_cache.dir
+/home/joao/.src/wmenu/build/meson-private/cmake_scdoc/CMakeFiles/rebuild_cache.dir

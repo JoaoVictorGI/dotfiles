@@ -2,5 +2,5 @@
 
 wall=$(find ~/Pictures/wallpapers/ -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
 
-hsetroot -full $wall
-#swaybg -m fill -i $wall
+#hsetroot -full $wall
+wbg $wall

@@ -1,0 +1,28 @@
+#!/bin/sh -x
+
+dev=@DEFAULT_SINK@
+
+case "$1" in
+	mute)
+		[ "$2" = "mic" ] && dev=@DEFAULT_SOURCE@
+		wpctl set-mute $dev toggle
+	;;
+	incn) wpctl set-volume -l 1.0 $dev 2%+ ;;
+	decr) wpctl set-volume -l 1.0 $dev 2%- ;;
+	*|?) echo "usage: vol incn|decr|mute [mic]" >&2; exit 1 ;;
+esac
+
+[ "$2" = "mic" ] && exit 0
+
+[ "$DBUS_SESSION_BUS_ADDRESS" ] && {
+	vol="$(wpctl get-volume @DEFAULT_SINK@)" # Volume: 1.00
+	vol="${vol##*: }" # 1.00
+	[ "${vol##*\ }" = "$vol" ] || { # 1.00 [MUTED]
+		muted="muted"
+		vol="${vol%%\ *}" # 1.00
+	}
+	vol="${vol%%.*}${vol##*.}" # 1, 00
+
+	notify-send --hint=string:x-dunst-stack-tag:volume \
+		-h int:value:"$vol" "sound $muted"
+}

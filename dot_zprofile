@@ -1,10 +1,11 @@
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="foot"
 export MOZ_ENABLE_WAYLAND=1
+export XDG_CURRENT_DESKTOP=wlroots
 eval "$(ssh-agent -s)"
 
 # MPD daemon start (if no other user instance exists)
-[ ! -s ~/.config/mpd/pid ] && mpd --no-config
+[ ! -s ~/.config/mpd/pid ] && mpd
 
 # MPDScribble daemon start
 [[ -z $(pgrep -xU $UID mpdscribble) ]] && mpdscribble &

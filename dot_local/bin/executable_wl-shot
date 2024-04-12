@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+out="$HOME/Pictures/screenshots/$(date +%d%m%Y_%H-%M-%S).png"
+
+while getopts o:s arg; do case $arg in
+	o) out="$OPTARG" ;;
+	s) sel="$(slurp -o)" ;;
+	? | *)
+		echo "usage: shot [-s] [-o out]" >&2
+		exit 1
+		;;
+	esac done
+
+grim ${sel:+ -g "$sel"} "$out"
+echo "$out"
+wl-copy -t image/png <"$out"
