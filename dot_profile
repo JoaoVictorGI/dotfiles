@@ -1,0 +1,31 @@
+PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/games
+export PATH HOME TERM
+export PATH="$HOME/.local/bin:$HOME/.local/go/bin:$HOME/.cargo/bin:$PATH"
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CURRENT_DESKTOP=wlroots
+export XDG_RUNTIME_DIR="/tmp/1000"
+
+export ENV="$HOME/.kshrc"
+export HISTSIZE=$((2 << 15))
+export HISTFILE="$XDG_CACHE_HOME/${SHELL##*/}_history"
+export HISTFILESIZE=$HISTSIZE
+
+export EDITOR=vis
+export BROWSER=ungoogled-chromium
+export TERMINAL=foot
+# export CFLAGS="-O3 -pipe -march=native -mtune=native"
+# export CXXFLAGS="$CFLAGS"
+export MAKEFLAGS="-j$(nproc)"
+
+export CHROME_FLAGS="--ozone-platform=wayland"
+export GOPROXY=direct
+export GOSUMDB=off
+export GOTOOLCHAIN=local
+export XZ_OPT="-T0"
+
+export PS1='$ '
+
+mkdir -pm 0700 "$XDG_RUNTIME_DIR"

@@ -1,0 +1,30 @@
+# pack-refs with: peeled fully-peeled sorted 
+d423105cf6490331039ddfe53514f7a61d2eea88 refs/remotes/origin/add-markup-type-detection-functions
+034c3d3440feb17b92b8e3ec15ea75cfed7947a2 refs/remotes/origin/detect-root
+d51311958096427f4b0e85a0ed282070c76bf54e refs/remotes/origin/github/fork/mcepl/lua-lsp
+036a656fbdd2a21d09746a8dcfb7a71abab47b62 refs/remotes/origin/main
+aeed7bbd8ecb5356654a7a5d096d46922044ad23 refs/remotes/origin/multiple_ls_per_file
+0af071a917472493a01a452c5102d0a217f3b8f8 refs/remotes/origin/style_pos
+39311199b4970ae030addd84545f10663ea112e4 refs/remotes/origin/v0.2.x
+081db1df237460b33a8d0b5816a63eb6d904f255 refs/tags/v0.1.0
+bb374f3817239e986edb663b522aa202f92280ba refs/tags/v0.1.1
+4049b2a90269f4fdb0111e06a30c527596209bd4 refs/tags/v0.1.2
+^5487e6b9a5afc852e1cb757157e386a4658a8a82
+dce1484d7cfb140eabb7ebaf0481113a175125bd refs/tags/v0.1.3
+^86ec0a64964a9b8afd73d65b5156648b0d9d564e
+03b676be1ac25bc962055b3142762064b1d88c05 refs/tags/v0.1.4
+^c60f7f44aad12382cb55057339277d7f3db8e9a8
+7f1971576122aee66bf4cff043fe4e3e5f46841f refs/tags/v0.1.5
+^8fb904d27f2f7a7f6dbe541605a367c4a88dec0f
+54f377241fd6f4625a76bda44352e1636fce7096 refs/tags/v0.1.6
+^53cebbabeb224a0370848ee71eff80b9e6b67671
+bbd5650cafdb9a96ec43126944a1d5782279be7a refs/tags/v0.1.7
+^6b5676791531a6b465661430077997f41caf84d8
+62caba8461f1078eeceb39fd7a153121f2f4df66 refs/tags/v0.1.8
+^a035db0f33b2a16a67daf915cafaec3b8e8022d0
+847ac0626e26d007c0f2325aec4ba940fab32f58 refs/tags/v0.1.9
+^1b0968ef3901d9b03a8c3eb4d9299c1816bd59e5
+ca66b67e1d6f526af95d5b1cc4b40bf91dec80c4 refs/tags/v0.2.0
+^efd5262f2c45d3289e482b1091d3c1d44cf67a42
+830ea9c7ecb4bde66e4ffc14c4ca4c7945ba8614 refs/tags/v0.2.1
+^39311199b4970ae030addd84545f10663ea112e4
