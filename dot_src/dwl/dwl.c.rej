@@ -1,22 +1,10 @@
 --- dwl.c
 +++ dwl.c
-@@ -258,6 +262,7 @@ static void createmon(struct wl_listener *listener, void *data);
- static void createnotify(struct wl_listener *listener, void *data);
- static void createpointer(struct wlr_pointer *pointer);
- static void cursorframe(struct wl_listener *listener, void *data);
-+static void defaultgaps(const Arg *arg);
- static void destroydecoration(struct wl_listener *listener, void *data);
- static void destroydragicon(struct wl_listener *listener, void *data);
- static void destroyidleinhibitor(struct wl_listener *listener, void *data);
-@@ -869,6 +885,11 @@ createmon(struct wl_listener *listener, void *data)
- 	for (i = 0; i < LENGTH(m->layers); i++)
- 		wl_list_init(&m->layers[i]);
+@@ -334,6 +334,7 @@ static Monitor *xytomon(double x, double y);
+ static void xytonode(double x, double y, struct wlr_surface **psurface,
+ 		Client **pc, LayerSurface **pl, double *nx, double *ny);
+ static void zoom(const Arg *arg);
++static void regions(const Arg *arg);
  
-+	m->gappih = gappih;
-+	m->gappiv = gappiv;
-+	m->gappoh = gappoh;
-+	m->gappov = gappov;
-+
- 	wlr_output_state_init(&state);
- 	/* Initialize monitor state using configured rules */
- 	m->tagset[0] = m->tagset[1] = 1;
+ /* variables */
+ static const char broken[] = "broken";

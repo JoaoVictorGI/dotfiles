@@ -142,7 +142,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_Return,     spawn,          {.v = termcmd} },
   { MODKEY,                    XKB_KEY_F12,        spawn,          {.v = audincn} },
 	{ MODKEY,                    XKB_KEY_F11,        spawn,          {.v = auddecr} },
-  { 0,                         XKB_KEY_Print,      spawn,          {.v = shotsel} },
+  { 0,                         XKB_KEY_Print,      regions,          {.v = shotsel} },
 	{ WLR_MODIFIER_SHIFT,        XKB_KEY_Print,      spawn,          {.v = shotful} },
 	{ MODKEY,                    XKB_KEY_b,          togglebar,      {0} },
 	{ MODKEY,                    XKB_KEY_j,          focusstack,     {.i = +1} },
