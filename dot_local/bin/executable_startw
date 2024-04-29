@@ -1,9 +1,9 @@
 #!/bin/sh
 
-start-pipewire &
 slstatus -s | dbus-run-session dwl -s '
+pipewire &
+pipewire-pulse &
 foot --server &
 set-wallpaper &
-dunst &
-wireplumber
+dunst
 '

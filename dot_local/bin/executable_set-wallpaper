@@ -1,6 +1,7 @@
 #!/bin/sh
 
-wall=$(find ~/Pictures/wallpapers/ -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
+wall=$(find ~/pix/wallpapers/ -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
 
-#hsetroot -full $wall
 wbg $wall
+
+pkill set-wallpaper
