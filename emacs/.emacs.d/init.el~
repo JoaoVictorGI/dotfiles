@@ -1,0 +1,131 @@
+;; Change native-comp-speed for performance
+(setq native-comp-speed 3)
+
+(native-compile-async "/usr/lib/emacs/31.0.50/native-lisp" 'recursively)
+(setq native-comp-compiler-options '("-march=znver3" "-Ofast" "-g0" "-fno-finite-math-only" "-fgraphite-identity" "-floop-nest-optimize" "-fdevirtualize-at-ltrans" "-fipa-pta" "-fno-semantic-interposition" "-flto=auto" "-fuse-linker-plugin"))
+
+(setq native-comp-driver-options '("-march=znver3" "-Ofast" "-g0" "-fno-finite-math-only" "-fgraphite-identity" "-floop-nest-optimize" "-fdevirtualize-at-ltrans" "-fipa-pta" "-fno-semantic-interposition" "-flto=auto" "-fuse-linker-plugin"))
+
+;; Build and activate Elpaca
+(defvar elpaca-installer-version 0.12)
+(defvar elpaca-directory (expand-file-name "elpaca/" user-emacs-directory))
+(defvar elpaca-builds-directory (expand-file-name "builds/" elpaca-directory))
+(defvar elpaca-sources-directory (expand-file-name "sources/" elpaca-directory))
+(defvar elpaca-order '(elpaca :repo "https://github.com/progfolio/elpaca.git"
+                              :ref nil :depth 1 :inherit ignore
+                              :files (:defaults "elpaca-test.el" (:exclude "extensions"))
+                              :build (:not elpaca-activate)))
+(let* ((repo  (expand-file-name "elpaca/" elpaca-sources-directory))
+       (build (expand-file-name "elpaca/" elpaca-builds-directory))
+       (order (cdr elpaca-order))
+       (default-directory repo))
+  (add-to-list 'load-path (if (file-exists-p build) build repo))
+  (unless (file-exists-p repo)
+    (make-directory repo t)
+    (when (<= emacs-major-version 28) (require 'subr-x))
+    (condition-case-unless-debug err
+        (if-let* ((buffer (pop-to-buffer-same-window "*elpaca-bootstrap*"))
+                  ((zerop (apply #'call-process `("git" nil ,buffer t "clone"
+                                                  ,@(when-let* ((depth (plist-get order :depth)))
+                                                      (list (format "--depth=%d" depth) "--no-single-branch"))
+                                                  ,(plist-get order :repo) ,repo))))
+                  ((zerop (call-process "git" nil buffer t "checkout"
+                                        (or (plist-get order :ref) "--"))))
+                  (emacs (concat invocation-directory invocation-name))
+                  ((zerop (call-process emacs nil buffer nil "-Q" "-L" "." "--batch"
+                                        "--eval" "(byte-recompile-directory \".\" 0 'force)")))
+                  ((require 'elpaca))
+                  ((elpaca-generate-autoloads "elpaca" repo)))
+            (progn (message "%s" (buffer-string)) (kill-buffer buffer))
+          (error "%s" (with-current-buffer buffer (buffer-string))))
+      ((error) (warn "%s" err) (delete-directory repo 'recursive))))
+  (unless (require 'elpaca-autoloads nil t)
+    (require 'elpaca)
+    (elpaca-generate-autoloads "elpaca" repo)
+    (let ((load-source-file-function nil)) (load "./elpaca-autoloads"))))
+(add-hook 'after-init-hook #'elpaca-process-queues)
+(elpaca `(,@elpaca-order))
+
+;; Setup use-package
+(elpaca elpaca-use-package
+  (elpaca-use-package-mode)
+  (setq use-package-always-ensure t) ; Ensure packages are installed
+  )
+
+
+;; Basic emacs configurations
+(use-package emacs
+  :init
+  (setq use-short-answers t
+	backup-directory-alist '(("." . "~/.saves"))
+	create-lockfiles nil)
+  :config
+  (setq-default truncate-lines t
+		display-line-numbers t
+		fill-column 80
+		tab-width 4)
+  (tool-bar-mode -1)
+  (menu-bar-mode -1)
+  (show-paren-mode 1))
+
+
+;; Theme
+(load-theme 'modus-operandi-tinted)
+
+(use-package windmove
+  :bind
+  (("M-<left>" . windmove-left)
+   ("M-<right>" . windmove-right)
+   ("M-<up>" . windmove-up)
+   ("M-<down>" . windmove-down)))
+
+
+(use-package golden-ratio
+  :hook (after-init . golden-ratio-mode)
+  :config
+  (golden-ratio-toggle-widescreen))
+
+
+(use-package vundo
+  :config
+  (setq vundo-compact-display t)
+  :bind
+  ("C-M-z" . vundo))
+
+
+;; Follow symlinks that links to a file in a git repo
+(setq vc-follow-symlinks t)
+
+(setq xref-search-program 'ripgrep)
+
+
+;; Completion
+(use-package vertico
+  :config
+  (vertico-mode)
+  (vertico-multiform-mode)
+  :custom
+  (vertico-resize t)
+  (vertico-count 15))
+
+(use-package marginalia :init (marginalia-mode))
+
+(use-package corfu :init (global-corfu-mode))
+
+
+(use-package which-key
+  :init
+  (which-key-mode)
+  (which-key-setup-minibuffer)
+  :config
+  (setq which-key-idle-delay 0.3)
+  (setq which-key-sort-order 'which-key-key-order-alpha
+	which-key-min-display-lines 3
+	which-key-max-display-columns nil))
+
+
+;; Copy-Paste between Emacs and Windows (WSL2)
+(setq select-active-regions nil)
+(setq select-enable-clipboard 't)
+(setq select-enable-primary nil)
+(setq interprogram-cut-function #'gui-select-text)

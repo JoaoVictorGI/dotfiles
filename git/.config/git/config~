@@ -1,0 +1,34 @@
+[alias]
+	a = "add"
+	br = "branch"
+	branches = "branch --sort=-committerdate --format='%(HEAD)%(color:yellow) %(refname:short) | %(color:bold red)%(committername) | %(color:bold green)%(committerdate:relative) | %(color:blue)%(subject)%(color:reset)' --color=always"
+	c = "clone"
+	ca = "commit --amend"
+	cam = "commit --amend -m"
+	can = "commit --amend --no-edit"
+	cm = "commit -m"
+	fo = "fetch origin"
+	po = "push origin"
+	pro = "pull --rebase origin"
+	st = "status -s"
+	sta = "status"
+
+[commit]
+	gpgSign = true
+
+[core]
+	editor = "doom emacs"
+
+[init]
+	defaultBranch = "main"
+
+[push]
+	autoSetupRemote = true
+
+[tag]
+	gpgSign = true
+
+[user]
+	email = "joaovictor.gizidoro@gmail.com"
+	name = "João Victor"
+	signingKey = "C80025CAE987D83C"

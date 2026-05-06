@@ -1,0 +1,13 @@
+export GPG_TTY=$TTY
+export EDITOR='emacsclient "${@:---create-frame}"'
+
+alias l="ls -l"
+alias la="ls -lAh --group-directories-first --color=auto"
+alias ls="ls -h --group-directories-first --color=auto"
+
+HISTFILESIZE=100000
+HISTSIZE=7000
+HISTFILE="$HOME/.zsh_history"
+mkdir -p "$(dirname "$HISTFILE")"
+
+eval "$(starship init zsh)"
