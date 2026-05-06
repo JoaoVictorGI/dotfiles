@@ -1,0 +1,21 @@
+* Dotfiles
+
+** How to install
+
+Clone the repository into your =$HOME=, cd into it and run stow to create the symlinks in the correct directories.
+
+#+begin_src shell
+  cd ~
+  git clone git@github.com:JoaoVictorGI/dotfiles.git
+  cd dotfiles
+  stow *
+#+end_src
+
+If you don't want all the configurations you can install a specific one. You need to use =--adopt= if the configuration already exists in your machine.
+
+#+begin_src shell
+  stow emacs
+  stow git
+  stow user-dirs
+  stow zsh
+#+end_src
