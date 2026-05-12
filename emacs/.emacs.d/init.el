@@ -2,7 +2,7 @@
 ;; Change native-comp-speed for performance
 (setq native-comp-speed 3)
 
-(native-compile-async "/usr/lib/emacs/31.0.50/native-lisp" 'recursively)
+(native-compile-async "/usr/lib/emacs/30.2/native-lisp" 'recursively)
 (setq native-comp-compiler-options '("-march=znver3" "-Ofast" "-g0" "-fno-finite-math-only" "-fgraphite-identity" "-floop-nest-optimize" "-fdevirtualize-at-ltrans" "-fipa-pta" "-fno-semantic-interposition" "-flto=auto" "-fuse-linker-plugin"))
 
 (setq native-comp-driver-options '("-march=znver3" "-Ofast" "-g0" "-fno-finite-math-only" "-fgraphite-identity" "-floop-nest-optimize" "-fdevirtualize-at-ltrans" "-fipa-pta" "-fno-semantic-interposition" "-flto=auto" "-fuse-linker-plugin"))
@@ -70,6 +70,8 @@
   (tool-bar-mode -1)
   (menu-bar-mode -1)
   (show-paren-mode 1)
+  (scroll-bar-mode -1)
+  (electric-pair-mode 1)
   (delete-selection-mode 1)) ; Automatically delete selected text when you start typing
 
 
@@ -112,6 +114,8 @@
   :custom
   (vertico-resize t)
   (vertico-count 15))
+
+(use-package compat)
 
 (use-package marginalia :init (marginalia-mode))
 
@@ -158,26 +162,28 @@
   :ensure nil
   :custom
   (newsticker-url-list
-   '(("https://sachachua.com/blog/feed" "Sasha Chua's Blog")
-	 ("https://protesilaos.com/master.xml" "Protesilaos Stavrou")
-	 ("https://planet.emacslife.com/atom.xml" "Planet Emacs Life")
-	 ("https://karl-voit.at/feeds/lazyblorg-all.atom_1.0.links-and-content.xml" "Karl Voit – Lazyblorg")
-	 ("https://irreal.org/blog/?feed=rss2" "Irreal")
-	 ("https://www.emacswiki.org/emacs?action=rss" "Emacs Wiki")
-	 ("https://gluer.org/rss/" "Gluer.org")
-	 ("https://fnguy.com/atom.xml" "fnguy.com")
-	 ("https://xenodium.com/feed" "Xenodium")
-	 ("https://j3s.sh/feed.atom" "j3s")
-	 ("https://www.dbdebunk.com/feeds/posts/default" "Database Debunkings")
-	 ("https://mydbanotebook.org/posts/" "My DBA Notebook")
-	 ("https://clojure.org/feed.xml" "Clojure")
-	 ("https://planet.clojure.in/" "Planet Clojure")
-	 ("https://clojurebr.substack.com/feed" "(concat)")
-	 ("https://www.jvm-weekly.com/feed" "JVM Weekly")
-	 ("https://inside.java/feed.xml" "Inside Java")
-	 ("https://blog.jetbrains.com/feed/" "JetBrains Blog")
-	 ("https://vladmihalcea.com/feed/" "Vlad Mihalcea")
-	 ("https://www.sivalabs.in/index.xml" "SivaLabs"))))
+   '(("Sasha Chua's Blog" "https://sachachua.com/blog/feed")
+     ("Protesilaos Stavrou" "https://protesilaos.com/master.xml")
+     ("Planet Emacs Life" "https://planet.emacslife.com/atom.xml")
+     ("Karl Voit – Lazyblorg" "https://karl-voit.at/feeds/lazyblorg-all.atom_1.0.links-and-content.xml")
+     ("Irreal" "https://irreal.org/blog/?feed=rss2")
+     ("Emacs Wiki" "https://www.emacswiki.org/emacs?action=rss")
+	 ("Emacs Redux" "https://emacsredux.com/atom.xml")
+     ("Gluer.org" "https://gluer.org/rss/")
+     ("fnguy.com" "https://fnguy.com/atom.xml")
+     ("Xenodium" "https://xenodium.com/feed")
+     ("j3s" "https://j3s.sh/feed.atom")
+     ("Database Debunkings" "https://www.dbdebunk.com/feeds/posts/default")
+     ("My DBA Notebook" "https://mydbanotebook.org/posts/")
+     ("Clojure" "https://clojure.org/feed.xml")
+     ("Planet Clojure" "https://planet.clojure.in/")
+     ("(concat)" "https://clojurebr.substack.com/feed")
+     ("JVM Weekly" "https://www.jvm-weekly.com/feed")
+     ("Inside Java" "https://inside.java/feed.xml")
+     ("JetBrains Blog" "https://blog.jetbrains.com/feed/")
+     ("Vlad Mihalcea" "https://vladmihalcea.com/feed/")
+     ("SivaLabs" "https://www.sivalabs.in/index.xml")
+	 ("Arkenfox" "https://github.com/arkenfox/user.js/releases.atom"))))
 
 (defun close-newsticker ()
   "Kill all tree-view related buffers."
