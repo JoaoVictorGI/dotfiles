@@ -5,6 +5,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 HISTSIZE=7000
 SAVEHIST=100000
+HISTFILE=~/.zshhistory
 
 source <(fzf --zsh)
 
@@ -18,9 +19,10 @@ for opt in "${set_opts[@]}"; do
 done
 unset opt set_opts
 
-export PATH="$PATH:/home/joao/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export EDITOR="emacsclient -c -a ''"
 
+alias sudo="doas"
 alias l="ls -l"
 alias la="ls -lAh --group-directories-first --color=auto"
 alias ls="ls -h --group-directories-first --color=auto"
