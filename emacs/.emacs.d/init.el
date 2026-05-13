@@ -185,7 +185,7 @@
      ("SivaLabs" "https://www.sivalabs.in/index.xml")
 	 ("Arkenfox" "https://github.com/arkenfox/user.js/releases.atom"))))
 
-(defun close-newsticker ()
+(defun my/close-newsticker ()
   "Kill all tree-view related buffers."
   (kill-buffer "*Newsticker List*")
   (kill-buffer "*Newsticker Item*")
